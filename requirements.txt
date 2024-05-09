@@ -1,0 +1,54 @@
+Flask
+Redis
+gunicorn
+
+
+npm install -g sass
+
+
+To use Sass (Syntactically Awesome Stylesheets) in your CSS workflow, you need to follow these steps:
+
+1. Install Sass: You can install Sass using npm (Node Package Manager) by running the following command in your terminal:
+
+   npm install -g sass
+
+
+
+2. Create a Sass file: Create a `.scss` file where you can write your Sass code. For example, you can create a file named `styles.scss`.
+
+3. Write Sass code: Write your CSS styles using Sass syntax in the `.scss` file. Sass provides features like variables, nesting, mixins, functions, and more to make your CSS code more maintainable and efficient.
+
+4. Compile Sass to CSS: Compile your Sass code into regular CSS using the Sass command in the terminal. Navigate to the directory where your `.scss` file is located and run the following command:
+
+   sass styles.scss styles.css
+   sass temp.scss styles.css
+
+
+
+This command will compile your `styles.scss` file into a regular CSS file named `styles.css`.
+
+5. Link the CSS file: Link the compiled CSS file (`styles.css`) in your HTML file using a `<link>` tag in the `<head>` section.
+
+Here's an example of how your Sass file (`styles.scss`) might look:
+
+scss
+$primary-color: #3498db;
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+    .header {
+        background-color: $primary-color;
+        color: white;
+        padding: 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}

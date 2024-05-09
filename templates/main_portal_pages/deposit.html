@@ -1,0 +1,62 @@
+
+<div class="deposit-container" style="display: none" id="deposit-container">
+{#<page-overlay>#}
+  <deposit-modal>
+    <h1>Deposit</h1>
+      <h2 style="color: red" id="error_deposit_message"><strong></strong></h2>
+    <h2 style="color: green"  id="success_deposit_message"><strong></strong></h2>
+    <ul class="payment-selection">
+      <li data-payment="card" class="payment-entity selected">Card</li>
+      <li data-payment="paysafe" class="payment-entity">PaysafeCard</li>
+      <li data-payment="neteller" class="payment-entity">Neteller</li>
+    </ul>
+    <label>
+      <span>Amount</span>
+      <input type="number" placeholder="20.00" required="" id="amount"  >
+    </label>
+
+    <section class="provider-section card">
+      <label>
+        <span>Card number</span>
+        <input type="text" placeholder="1111 2222 3333 4444"  >
+        <a class="add-new-card" href="">+ Manage cards</a>
+      </label>
+      <div class="inline">
+        <label>
+          <span>Expires</span>
+          <input type="text" placeholder="04/17">
+        </label>
+        <label>
+          <span>CVV</span>
+          <input type="text" placeholder="123">
+        </label>
+      </div>
+    </section>
+    <section class="provider-section paysafe hide">
+      <label>
+        <span id="account_number" >PaysafeCard number or account number</span>
+        <input type="text" placeholder="1111 2222 3333 4444" id="destination_account_number" >
+      </label>
+    </section>
+    <section class="provider-section neteller hide">
+      <label>r
+        <span>Secure ID</span>
+        <input type="text" placeholder="123456">
+      </label>
+      <label>
+        <span>Email</span>
+        <input type="text" placeholder="someone@something.com">
+      </label>
+    </section>
+
+    <div class="divider">...</div>
+
+    <label>
+      <span>Promo code(Optional)</span>
+      <input type="text" placeholder="Enter promo code">
+    </label>
+    <button onclick="deposit()">Deposit</button>
+    <small>In accordance with our Responsible Gambling Policy, you can now set Deposit Limits at any time from your account section.</small>
+  </deposit-modal>
+</page-overlay>
+    </div>

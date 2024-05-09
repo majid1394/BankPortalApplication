@@ -1,0 +1,82 @@
+.create-account-container {
+  /*padding: 16px;*/
+  background-color: var(--app-bg);
+  /*height: 100%;*/
+  /*flex: 1;*/
+  /*max-height: 100%;*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  z-index: 1000;
+  width: 20%;
+  height: 400px;
+}
+
+.deposit-container button {
+  background: #001E33;
+  border: none;
+  color: #fff;
+  /*padding: 2rem 1rem;*/
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  /*margin-top: auto;*/
+
+}
+
+
+
+/*.create-account-container button {*/
+/*  margin-top: 150px;*/
+
+/*  display: inline-block;*/
+/*  padding: 10px 20px;*/
+/*  background-color: #007bff;*/
+/*  color: #fff;*/
+/*  border: 1px solid #007bff;*/
+/*  border-radius: 5px;*/
+/*  cursor: pointer;*/
+/*   height: 2%;*/
+/*}*/
+
+/*.create-account-container label {*/
+/*  color: #007bff;*/
+
+/*}*/
+.overlay {
+  display: none;
+  /*position: fixed;*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*height: 100%;*/
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.account-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  z-index: 1000;
+}
+
+.create-account-container button[type=submit] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  height: 10px;
+
+}
+

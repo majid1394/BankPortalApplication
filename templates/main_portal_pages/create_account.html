@@ -1,0 +1,32 @@
+  <div class="create-customer-container" style="display: none" id="create-account-container">
+      <div class="account-overlay" id="account-overlay"></div>
+            <div class="account-popup" id="account-popup">
+{#      <div class="overlay" id="overlay"></div>#}
+{#            <div class="popup" id="popup">#}
+{# <div class="create-account-container" id="create-account-container">#}
+
+
+  <h2>Create Account</h2>
+{#  <form >#}
+    <div>
+ <div class="container">
+        <p style="color: red" id="error_create_account_message"></p>
+     <p style="color: green" id="success_account_created_message"></p>
+        <label for="nationalCode">National Code</label>
+        <input type="text" id="nationalCode" name="nationalCode" placeholder="Type Customer National Code">
+
+        <label for="accountType">Account type</label>
+        <select id="accountType">
+            <option value="1">JARI</option>
+            <option value="2">kotalModat</option>
+            <option value="3">PASANDAZ</option>
+        </select>
+
+        <button type="submit" onclick="submitAccountCreateForm()">Submit</button>
+{#        <button onclick="getData()">Get Data</button>#}
+ </div>
+{#  </form>#}
+    </div>
+</div>
+{#      </div>#}
+      </div>
